@@ -1,10 +1,14 @@
+# 2024 - Translation Reintroduced, Project End of Life
+qBittorrent has reintroduced built-in support for third-party webUI translation in v4.6.5 and I've updated the project to support this again as well. 
+**Changing your Language:** You must disable the third-party webUI, change your language in the settings, and re-enable third-party webUI.
+
+Baring any major bug in the release, this will be my final project update. While investigating the reintroduction of translation support, I noticed that the Master branch has an entirely new webUI that supports dark mode natively. This development seems well under way and I am deprecating this project in anticipation of native dark mode support. 
+**Become the maintainer:** If you're interested in continuing the project for some reason (distaste for the new UI?), feel free to message me.
+
 # qBittorent-WebUI-DarkLight
 A version of Dark/Light mode for the standard WebUI using custom CSS Properties. This should support the same browsers as the standard WebUI, excluding IE, as long as the version is new enough to support vars and custom CSS properties (indicated in the table at the bottom). The theme respects OS default, but is also toggle-able. 
 
 I wanted to refresh my CSS / SASS skills by creating a dark mode for qBittorrent. The only other version of the standard UI I've seen is not toggle-albe. I also primarily see versions that change colors but leave all the icons as is (not ideal for dark mode). I've managed to keep changes primarily to the CSS files, though minor changes have been made to a few of the JSs and the index. 
-
-# This Project is now English-Only
-qBittorrent has removed built-in support for third-party webUI translation.
 
 # Notes
 **Updates Nov 2022** qBittorent appears in the process of swapping out all their icons, and may soon be implementing it's own dark mode based on comments in code commits, rendering this project mostly useless (let's hope), except as a base for easy custom theming. This was a relatively big update, with new icons, and some file path changes. The new icons are what's in the current qBittorent master and beta release. Some of these are awful in my opinion, but I've tried to remain faithful to the master for now. Hopefully they tweak them further.
@@ -17,17 +21,13 @@ qBittorrent has removed built-in support for third-party webUI translation.
 
 **Older Versions of qBittorrent:** I am prioritizing latest releases of qBittorent. With the recent rebuild of project, this may work with more older qBit versions in the future, but will definitely break with every mootools update. See the legacy branch for an older version of this project and maybe you'll get lucky. 
 
-**Search/RSS Tabs:** I don't use either of these tabs, but I've done a fair amount of testing for theming, but there may be specific scenarios I haven't  accounted for. If you see something that clearly is not as it should be, let me know in the issues.
+**Search/RSS Tabs:** I don't use either of these tabs. I've done a fair amount of testing for theming, but there may be specific scenarios I haven't  accounted for. If you see something that clearly is not as it should be, let me know in the issues.
 
 **Icons:** I've compiled UI icons into "_IC" .ai files for quick recoloring to those who have a compatible editor.
 
 **Colors/Design:** I may branch this eventually with custom icons throughout and a redesigned style. I recently did another icon re-color, but will likely slowly iterate away from the original qBittorrent icons over time. I'll be leaving "Wide Compatibility (Div)" and "Legacy" branch icons as the closest version to the original UI.
 
 **Scrollbars:** Use CSS styling, which has only really been supported in the last few years. Compatibility may vary, but works in current versions of Safari, Chrome, and Firefox. I doubt I'll ever implement a javascript method.
-
-**Near future:** I won't be making many changes, just stream-lining the SASS with some more mixins. 
-
-**Long term:** I may attempt mobile layouts, but those could never make it here. For the short term I've made the login page more mobile device friendly (not tiny). 
 
 # Preview
 ![Preview Image](https://github.com/raylanser/DarkLight-qBittorent-WebUI/blob/default/preview.png)
